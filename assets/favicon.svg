@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <clipPath id="pokeball-clip">
+      <circle cx="32" cy="32" r="28"/>
+    </clipPath>
+    <linearGradient id="poke-red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4d64"/>
+      <stop offset="100%" stop-color="#ee4057"/>
+    </linearGradient>
+    <linearGradient id="poke-white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f2f8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Spherical body clipped to circle -->
+  <g clip-path="url(#pokeball-clip)">
+    <!-- Top red dome -->
+    <rect x="0" y="0" width="64" height="32" fill="url(#poke-red)"/>
+    <!-- Specular highlight -->
+    <ellipse cx="23" cy="18" rx="9" ry="4.5" fill="#ffffff" opacity="0.32" transform="rotate(-25 23 18)"/>
+    <!-- Bottom white dome -->
+    <rect x="0" y="32" width="64" height="32" fill="url(#poke-white)"/>
+    <!-- Center black band -->
+    <rect x="0" y="29.5" width="64" height="5" fill="#161927"/>
+  </g>
+
+  <!-- Outer ball outline -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#161927" stroke-width="4"/>
+
+  <!-- Center button -->
+  <circle cx="32" cy="32" r="9.5" fill="#161927"/>
+  <circle cx="32" cy="32" r="6" fill="#ffffff" stroke="#161927" stroke-width="1.8"/>
+  <circle cx="32" cy="32" r="2.8" fill="#e8edf6"/>
+  <circle cx="31.2" cy="31.2" r="1.1" fill="#ffffff"/>
+</svg>
